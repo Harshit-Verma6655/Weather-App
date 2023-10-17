@@ -33,10 +33,9 @@
         let city=document.querySelector(".city").value;
            let lat="";
          let lon="";
-        
            console.log(city);
            const key="f034e862e36f923a3e74c4cf1bcc145a";
-           let geourl=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
+           let geourl=`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
            fetch(geourl)
            .then((Response)=>{
                if(!Response.ok){
